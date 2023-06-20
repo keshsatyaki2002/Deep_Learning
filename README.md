@@ -8,6 +8,7 @@ To start with the project,
   ```python
   from google.colab import drive
   drive.mount('/content/drive', force_remount=True)
+  ```
 * Now using the code :-
 ```python
 import zipfile
@@ -15,5 +16,8 @@ import zipfile
 zip_ref = zipfile.ZipFile(path, 'r')
 zip_ref.extractall('/content/my_data_folder')
 zip_ref.close()
-Extract all the files and save it to your specified path inside google colab
+```
+
+
+* Extract all the files and save it to your specified path inside google colab
 Note- The google colab account loses its access with the colabaoratory , when the runtime gets disconnected.
